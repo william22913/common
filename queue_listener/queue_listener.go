@@ -22,7 +22,6 @@ func (q *queueListener) startListen(
 	x int,
 	f DoFunction,
 ) chan struct{} {
-	listener := make(chan interface{})
 	state := make(chan struct{})
 
 	go func() {
@@ -37,8 +36,6 @@ func (q *queueListener) startListen(
 
 				f(x, msg)
 			case <-state:
-				close(listener)
-				close(state)
 				break
 			}
 		}
