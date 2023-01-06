@@ -18,6 +18,7 @@ func NewMetrics(
 		},
 		[]string{"path", "method", "status"},
 	)
+
 	metric.def.APIConnectorHist = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
 			Name: "http_connector_hist",
@@ -27,6 +28,7 @@ func NewMetrics(
 	)
 
 	prometheus.Register(metric.def.APIHist)
+	prometheus.Register(metric.def.APIConnectorHist)
 
 	for i := range cols {
 		prometheus.Register(cols[i])
