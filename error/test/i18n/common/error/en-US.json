@@ -1,0 +1,7 @@
+{
+    "E-4-CMD-DTO-001" : "Field {{.FieldName}} Cannot Empty",
+    "E-4-CMD-DTO-002" : "Invalid Format in Field {{.FieldName}}",
+    "E-4-CMD-DTO-003" : "{{.FieldName}} must following rule : {{.RuleName}} {{.Other}}",
+    "E-4-CMD-DTO-004" : "Unknown data with this {{.FieldName}}",
+    "E-4-CMD-DTO-006" : "{{.FieldName}} includes prohibited words"
+}

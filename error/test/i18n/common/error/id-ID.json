@@ -1,0 +1,7 @@
+{
+    "E-4-CMD-DTO-001" : "Data {{.FieldName}} tidak boleh kosong",
+    "E-4-CMD-DTO-002" : "Format data {{.FieldName}} tidak sesuai",
+    "E-4-CMD-DTO-003" : "{{.FieldName}} harus mengikuti format : {{.RuleName}} {{.Other}}",
+    "E-4-CMD-DTO-004" : "Data dengan {{.FieldName}} ini tidak diketahui",
+    "E-4-CMD-DTO-006" : "{{.FieldName}} termasuk kata kata yang dilarang"
+}
